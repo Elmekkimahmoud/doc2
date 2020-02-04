@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+nav a img  {width:275px; height:30px; margin-top: 10px; }
+header { z-index: 5; }
+nav { display: flex;
+    flex-direction: row;justify-content:space-around  ;
+}
+ul {list-style-type: none; display: flex; flex-direction: row; justify-content: space-around; }
+li {padding:10px 10px; }
+header { background-color: white;  box-shadow:  4px -1px 6px 3px rgba(0,0,0,.15) ; position: fixed; width: 100%; height:70px ; top: 0px; 
+    transition: box-shadow .25s ease 0s;}
+
+li:first-of-type {color:#2FC1AD;} 
+li:hover {color:#2FC1AD ;}
+
+main {margin-top: 100px;}
+.sec1div1 {text-align: center;}
+
+.sec1div1 h1 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-size: 34px; font-weight: 300; line-height:44.2px ; color:rgb(0, 179, 155) ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sec1div2 {
+    width: 100%;
+    display: flex;
+ 
+    /* justify-content: space-around;*/
+    font-family: 'Roboto', sans-serif ; margin: 20px 70px 50px 85px ;
+
+}
+.sec1div2 p { /*; padding: 20px 10px;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+font-size: 16px;
+    font-weight: 400 ;
+    
+    line-height: 28px ;
+    
+    color: rgb(116, 116, 116) ; width: 475px;
+    margin-right: -80px;
+} 
+ .sec1div2 p:first-child {padding-right: 20px;}
+
+ .mainsec2 {
+display: flex ; padding: 50px 187px;   /* justify-content: space-around*/;
+
+}
+.mainsec2 p,h6 {color: white; padding-left: 30px; }
+.sec2div1 {
+display: flex; flex-direction: column; background-color:rgb(0, 179, 155) ; width: 480px;height:390px; border-radius:10px; 
+overflow: hidden; position: relative;
+}
+.sec2div1 img { /* margin-left: 250px; margin-top: 50px;*/ width:300px; height:250px; position: absolute;top: 160px; left: 240px;   }
+.sec2div2 img { /* margin-left: 250px; margin-top: 50px;*/ width:300px; height:250px; position: absolute;top: 160px; left: 240px;   }
+.sec2div2 { background-color:#3d83df ; width: 480px;height:390px; margin-left: 20px;border-radius:10px;
+    overflow: hidden ; position: relative;}
+.mainsec2 h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+
+    font-size: 14px;
+    
+    font-weight: 400 ;
+    
+    line-height: 18.2px ;
+    
+    color: rgba(255, 255, 255, 0.7)
+}
+.mainsec2 p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+
+font-size: 26px ;
+
+font-weight: 300 ;
+
+line-height: 33.8px ;
+
+color: rgb(255, 255, 255)  ;margin-top: 0px; padding-top: 0px;
+}
+.mainsec2 span {background-color: white; width: 200px; height:70px ; text-align: center; margin-left: 30px;
+border-radius: 5px; padding-top: 10px; 
+}
+.mainsec3 {display: flex; width:100%; height:100px; /*justify-content: center;*/margin-left: 184px;} 
+.mainsec3 h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+
+font-size: 26px ;
+
+font-weight: 300 ;
+
+line-height: 33.8px ;
+
+color: rgb(0, 179, 155) ; width: 212px;
+}
+.mainsec3 div { margin-left: 100px;margin-top: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+
+
+font-size: 16px;
+
+font-weight: 400;
+
+line-height: 20.8px;
+
+color: rgb(61, 131, 223);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 638px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.mainsec3 div  img
+{
+    height: 23px;
+    width: 134px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainsec4 { display: flex; width: 100%; height: 600px;background-color:#d7f5f5; margin-top: 50px; overflow: hidden; }
+.sec4div1 {padding-right: 150px; position: relative;}
+.sec4div1 img {position: absolute; top: 250px;}
+.sec4div1 h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+font-size: 34px;
+font-weight: 300;
+line-height: 44.2px;
+color: rgb(0, 179, 155); }
+.sec4div1 p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(116, 116, 116); }
+.sec4div1>h1,p {width: 350px; padding-left: 100px; }
+.container { position: relative;
+    display: flex; flex-direction: row; width: 600px; height: 600px ; flex-wrap: wrap;}
+.container div { display: flex; flex-direction: column; align-items: center;
+    background-color: white; padding-top: 10px;/* border:5px solid black ;*/ width: 200px; height: 220px; }
+    .container div img {width: 40px; height: 40px;}
+    .container div h3 { text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 24px;
+font-weight: 300;
+line-height: 31.2px;
+color: rgb(0, 179, 155); }
+.container div p { width: 200px; text-align: center; padding-left: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 16.9px;
+color: rgb(116, 116, 116); }
+.contdiv1 {margin-top: 40px;  } 
+.contdiv2 {margin: 20px 20px; }
+.contdiv3 {margin: 50px 20px ;}
+.contdiv4 {position: absolute; top: 300px; left: 220px;}
+
+.mainsec5 {display: flex; flex-direction: column; align-items: center;margin-top: 100px;  }
+.mainsec5 h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 44.2px;
+    color: rgb(0, 179, 155); width: 450px;  text-align: center; }
+    .mainsec5 p {padding-left: 0px; 
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgb(116, 116, 116); width: 500px; text-align: center; }
+    .sec5div {margin-top: 30px; display: flex; position: relative; background-color: white; border-radius: 5px; margin-bottom: 19px;}
+    .sec5div img {border-radius: 5px;}
+    .sec5div h4 { width: 100px; /*border: 2px solid red; */padding-left: 5px;
+        font-family:  sans-serif ;
+        font-size: 18px ;
+        font-weight: 400;
+        line-height: 30px;
+        color: rgb(116, 116, 116);
+    }
+    .sec5div span { position: absolute; top: 306px;left: 175px; background-color:#1662c6 ;
+ width:125px; height: 25px; text-align: center; padding-top: 13px; border-radius: 3px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 10px;
+font-weight: 700;
+line-height: 10px;
+color: rgb(255, 255, 255);
+}
+body {position: relative;}
+footer { width: 100%; height: 100px; background-color:#FFFFFF ; text-align: center; /* border: 15px solid red;*/
+display: flex; flex-direction: column; align-items: center; position: absolute; bottom: -172px;;  margin-top: 100px;
+border-top: 1px solid #eef2f2; 
+}
+footer p {width: 70%; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: rgb(171, 171, 171);
+}
+select{
+
+    width: 127px;
+    margin-left: 37px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.country{
+
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 73%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+a{
+
+
+    text-decoration:none
 }

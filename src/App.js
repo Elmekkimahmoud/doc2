@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'; //imrc
+import Header from './header.js'
+import './App.css'
+import Footer from './footer.js';
+import Healthcare from './healthcare.js';
+import Booking from './Booking.js' ;
+import Company from './company.js';
+import Platform from './platform.js';
+import Countries from './countries.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {//cc
+
+  state = {  }
+  render() { 
+    return (
+<docplanner>
+  
+<Header > </Header>
+<main>
+
+<Healthcare> </Healthcare>
+<Booking> </Booking>
+<Company> </Company>
+<Platform></Platform>
+<Countries></Countries>
+</main>
+<Footer> </Footer>
+
+</docplanner>
+
+      );
+  }
 }
-
+ 
 export default App;
